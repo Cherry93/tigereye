@@ -1,0 +1,7 @@
+Flask
+Flask-script
+Flask-classy
+Flask-sqlalchemy
+pymysql
+faker
+gunicorn

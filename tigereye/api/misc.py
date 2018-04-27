@@ -1,0 +1,17 @@
+from tigereye.api import ApiView
+from django.db import transaction
+
+class MiscView(ApiView):
+    # @transaction.atomic
+    def before_check(self):
+        print('hahahaah')
+
+    def check(self):
+        return "I'm OK"
+
+    def ping(self):
+        return 'pong'
+
+    def error(self):
+        num = 0
+        1 / num
